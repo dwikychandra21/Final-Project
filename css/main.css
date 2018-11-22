@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Product-sans';
+    src: url("../fonts/Product-Sans-Regular.ttf");
+}
+
+::-moz-selection {
+    background-color: #455A64;
+    color: #fff;
+}
+
+::selection {
+    background-color: #455A64;
+    color: #fff;
+}
+
+html, body {
+    margin: 0;
+    height: calc(100% - 50px);
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: auto;
+    background: #fff;
+    border-radius: 50px;
+    transform: translateX(-50%);
+    left: 50%;
+    transition: all 0.4s ease;
+}
+
+nav.hidden {
+    transform: translateX(-50%) translate3d(0, -110%, 0);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header nav li {
+    margin: 10px 20px;
+    padding: 0;
+    position: relative;
+}
+
+header nav li::after {
+    content: "";
+    position: absolute;
+    background: #263238;
+    height: 4px;
+    width: 0;
+    top: -30px;
+    left: auto;
+    right: 0;
+    transition: width 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    border-radius: 0 0 30px 30px;
+}
+
+header nav li:hover::after {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Product-sans';
+    font-size: 17px;
+}
+
+header nav li:hover a {
+    font-weight: bold;
+}
+
+.home {
+    position: relative;
+    background: #263238;
+    color: #fff;
+    margin: 50px 25px 0;
+    padding: 50px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.home-name {
+    max-width: 500px;
+}
+
+.home-name h1 {
+    font-weight: 100;
+    font-size: 5em;
+    margin: 0;
+}
+
+.home-name p {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 100;
+    line-height: 2;
+    font-style: italic;
+}
+
+.home-name p:first-child {
+    font-size: 100px;
+}
+
+.home-section {
+    position: relative;
+    padding: 100px 60px 0;
+    z-index: 2;
+}
+
+.home-name h1 span {
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 0;
+}
+
+.home-image {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    z-index: 3;
+}
+
+.home-image img {
+    width: 350px;
+}
+
+.home-social-media ul li {
+    display: inline-block;
+}
+
+.home-social-media img {
+    width: 25px;
+    margin-right: 20px;
+}
+
+.home-social-media ul {
+    text-align: left;
+    padding: 0;
+    margin: 20px 0;
+}
+/* 
+.home::after {
+    content: "";
+    position: absolute;
+    background: #37474F;
+    height: 600px;
+    width: 600px;
+    right: -110px;
+    bottom: -200px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    background: #455A64;
+    height: 600px;
+    width: 600px;
+    left: -367px;
+    top: -254px;
+    z-index: 1;
+    border-radius: 50%;
+} */
+
+.bubble {
+    position: absolute;
+    z-index: 1;
+    background: #455A64;
+    border-radius: 50%;
+}
+
+.bubble1 {
+    height: 600px;
+    width: 600px;
+    right: -110px;
+    bottom: -200px;
+    background: #37474F;
+}
+
+.bubble2 {
+    height: 600px;
+    width: 600px;
+    left: -367px;
+    top: -254px;
+    opacity: 0.5;
+    filter: blur(2px);
+}
+
+.bubble3 {
+    height: 100px;
+    width: 100px;
+    right: 80px;
+    top: -30px;
+    filter: blur(3px);
+    opacity: 0.5;
+}
+
+/* ABOUT PAGE */
+
+.about-me {
+    padding-top: 40px;
+}
+
+.about-me h1 {
+    position: relative;
+    font-family: 'Product-sans';
+}
+.about-me h1::after {
+    content: "ABOUT ME";
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
