@@ -1,56 +1,153 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Dwiky Chandra Hidayat - Frontend Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100, 400" rel="stylesheet">
-</head>
-<body>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/icon/logo.png" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100, 400"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skill</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="skill.html">Skill</a></li>
+          <!-- <li><a href="#">Portofolio</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="home">
-        <div class="home-section">
-            <div class="home-name">
-                <h1>Dwiky <span>Chandra</span></h1>
-                <p>Web Designer and Frontend Developer</p>
-                <div class="home-social-media">
-                    <ul>
-                        <li><a href=""><img src="img/facebook.svg" alt="facebook icon"></a></li>
-                        <li><a href=""><img src="img/instagram.svg" alt="instagram icon"></a></li>
-                        <li><a href=""><img src="img/linkedin.svg" alt="linkedin icon"></a></li>
-                        <li><a href=""><img src="img/github.svg" alt="github icon"></a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="home-section">
+        <div class="home-name">
+          <h1>Dwiky <span>Chandra</span></h1>
+          <p>Designer and Developer</p>
+          <div class="home-social-media">
+            <ul>
+              <li>
+                <a href=""><img src="img/icon/facebook.svg" alt="facebook icon"/></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="img/icon/instagram.svg" alt="instagram icon"
+                /></a>
+              </li>
+              <li>
+                <a href=""><img src="img/icon/linkedin.svg" alt="linkedin icon"/></a>
+              </li>
+              <li>
+                <a href=""><img src="img/icon/github.svg" alt="github icon"/></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="home-image">
-            <img src="img/profile.png" alt="Foto Profil Dwiky Chandra Hidayat">
-        </div>
+      </div>
+      <div class="home-image">
+        <img src="img/profile.png" alt="Foto Profil Dwiky Chandra Hidayat" />
+      </div>
 
-        <div class="bubbles-background">
-            <div class="bubble bubble1"></div>
-            <div class="bubble bubble2"></div>
-        </div>
+      <div class="bubbles-background">
+        <div class="bubble bubble1"></div>
+        <div class="bubble bubble2"></div>
+      </div>
     </div>
 
-    <!-- <div class="about-me" style="height:1000px;">
-        <h1 class="text-center">ABOUT ME</h1>
-    </div> -->
-    
-    <script src="js/main.min.js"></script>
-</body>
+    <div class="my-certificate">
+        <h1>My Certificate</h1>
+        <hr>
+      <div class="owl-carousel owl-theme">
+        <div class="certificate-container">
+          <div class="certificate-pattern">
+            <div class="certificate-desc">
+              <h2>3rd Winner Web Design</h2>
+              <p>Informatic Festival and Competition [INVENTION] 2018</p>
+              <button data-modal="modal-1">
+                See Certificate
+              </button>
+            </div>
+          </div>
+          <img src="img/icon/certificate.svg" alt="Certificated Icon" />
+        </div>
+        <div class="certificate-container">
+          <div class="certificate-pattern">
+            <div class="certificate-desc">
+              <h2>Mobile Web Specialist</h2>
+              <p>Google Developer Kejar 2018</p>
+              <button data-modal="modal-2">
+                See Certificate
+              </button>
+            </div>
+          </div>
+          <img src="img/icon/certificate.svg" alt="Certificated Icon" />
+        </div>
+        <div class="certificate-container">
+          <div class="certificate-pattern">
+            <div class="certificate-desc disabled">
+              <h2>Coming Soon</h2>
+              <p>...</p>
+              <button disabled>
+                See Certificate
+              </button>
+            </div>
+          </div>
+          <img src="img/icon/certificate-disable.svg" alt="Certificated Icon" />
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop"></div>
+
+    <div class="modal" id="modal-1">
+      <span class="close-button"><img src="img/icon/close.png" alt=""/></span>
+      <img src="img/certificate/invention-certificate.jpg" alt="IVENTION Certificate" />
+    </div>
+
+    <div class="modal" id="modal-2">
+      <span class="close-button"><img src="img/icon/close.png" alt=""/></span>
+      <img src="img/certificate/gdk-certificate.jpg" alt="Google Developer Kejar Certificate" />
+    </div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+          // loop: true,
+          dots: true,
+          margin: 10,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            600: {
+              items: 2,
+              nav: false,
+              loop: false
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false
+            }
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
